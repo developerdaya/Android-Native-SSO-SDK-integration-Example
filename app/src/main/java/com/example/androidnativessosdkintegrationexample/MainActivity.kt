@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Opening SSO SDK", Toast.LENGTH_SHORT).show()
 
             // Initialize the EdugorillaSSO SDK
+            // replace_your_base_url and private_key
             EdugorillaSSO.initializeBaseUrlAndFileLocation(
                 "https://stgtestseries.edugorilla.com/",
                 resources.getIdentifier(
@@ -31,12 +32,13 @@ class MainActivity : AppCompatActivity() {
 
             // Create user info JSON object
             val userInfo = JSONObject().apply {
-                put("name", "Dayanand Khatik")
-                put("email", "developerdaya@gmail.com")
-                put("mobile", "7054576474")
+                put("name", "replace_your_name")
+                put("email", "replace_your_email")
+                put("mobile", "replace_your_mobile")
             }
 
             // Encrypt URL and open WebView
+            // replace_your_redirect_url
             EdugorillaSSO.encryptUrlAndOpenWebView(this, userInfo.toString(), "https://stgtestseries.edugorilla.com")
         }
     }
