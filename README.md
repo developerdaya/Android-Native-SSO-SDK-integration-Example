@@ -50,7 +50,7 @@ Below is a complete implementation for integrating the SSO SDK into your app:
 
             // Initialize the EdugorillaSSO SDK
             EdugorillaSSO.initializeBaseUrlAndFileLocation(
-                "https://stgtestseries.edugorilla.com/", // replace_your_base_url
+                "your_base_url",
                 resources.getIdentifier(
                     "private_key", "raw", packageName
                 )
@@ -67,7 +67,7 @@ Below is a complete implementation for integrating the SSO SDK into your app:
             EdugorillaSSO.encryptUrlAndOpenWebView(
                 this,
                 userInfo.toString(),
-                "https://stgtestseries.edugorilla.com" // replace_your_redirect_url
+                "your_redirect_page_url" 
             )
         
     
