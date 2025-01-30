@@ -80,6 +80,8 @@ Below is a complete implementation for integrating the SSO SDK into your app:
 Congratulations! Your integration is complete.
 
 ---
+## This is our sample App:
+https://gitlab.com/dayanand.khatik/android-sso-sdk-integration-example-kotlin
 
 ## Support
 
