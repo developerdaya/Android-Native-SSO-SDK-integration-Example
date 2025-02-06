@@ -18,7 +18,7 @@ To integrate the Android Native SSO SDK, ensure you have the following:
 1. Open the file `android/app/build.gradle`.
 2. Add the following dependency in the `dependencies` block:
    ```groovy
-   implementation 'com.gitlab.shashwat-vik:android-sso-sdk:1.10'
+   implementation 'com.gitlab.shashwat-vik:android-sso-sdk:1.11'
    ```
 
 ---
